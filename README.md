@@ -288,7 +288,7 @@ git clone <repository-url>
 ### 2. Navigate into the project folder
 
 ```bash
-cd ET712_Project_MotoMax
+cd Motomax
 ```
 
 ### 3. Install dependencies
