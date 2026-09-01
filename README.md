@@ -337,5 +337,4 @@ http://localhost:3000
 
 **Nihar Patel**
 
-Course: **ET712 – Full Stack Web Development**  
 Project: **MotoMax React E-Commerce Application**
