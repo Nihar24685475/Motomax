@@ -1,70 +1,342 @@
-# Getting Started with Create React App
+#PROJECT 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MotoMax 🏍️
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+**MotoMax** is a front-end React web application built using **React.js** and **React Router DOM**.  
 
-### `npm start`
+This project is an online motorcycle gear shopping website that allows users to browse motorcycle products, view detailed product information, and manage a shopping cart.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application demonstrates the use of:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React Components
+- React Props
+- React State Management
+- React Router DOM
+- Event Handling
+- Reusable UI Components
+- Responsive Web Design
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Features
 
-### `npm run build`
+## 🔗 Navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React Router navigation
+- Multiple page routes:
+  - Home Page
+  - Shop Page
+  - Shopping Cart Page
+- Category-based routing:
+  - Helmets
+  - Jackets
+  - Gloves
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 🛒 Product Catalog
 
-### `npm run eject`
+Users can browse motorcycle gear products with:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Product images
+- Product names
+- Product prices
+- Product descriptions
+- Add to Cart functionality
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Reusable Product Cards
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Product cards are created using React props to display dynamic product information.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+# 🏍️ Product Categories
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The application includes:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- 🪖 Helmets
+- 🧥 Jackets
+- 🧤 Gloves
 
-### Code Splitting
+Features:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Category sidebar navigation
+- Dynamic product filtering using React Router
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# 🖼️ Modal Window
 
-### Making a Progressive Web App
+A reusable modal component allows users to view detailed product information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+When a product image is clicked, the modal displays:
 
-### Advanced Configuration
+- Larger product image
+- Product name
+- Product description
+- Product price
+- Add to Cart button
+- Close button
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+# 🛍️ Shopping Cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The shopping cart allows users to:
 
-### `npm run build` fails to minify
+- Add products to cart
+- Automatically increase quantity when adding duplicate products
+- Remove products from cart
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Cart displays:
+
+- Product image
+- Product name
+- Quantity
+- Product price
+- Subtotal
+
+### Price Calculation
+
+The cart dynamically calculates:
+
+- Subtotal
+- New York Sales Tax (8.16%)
+- Total Price
+
+---
+
+# 📱 Responsive Design
+
+The application is designed for:
+
+- Desktop
+- Tablet
+- Mobile devices
+
+Implemented using:
+
+- CSS Flexbox
+- CSS Grid
+- Responsive layouts
+- Motorcycle-themed color design
+
+---
+
+# 📂 Project Structure
+
+```
+src/
+
+│── App.js
+│── App.css
+│
+├── components/
+│   ├── Home.js
+│   ├── Navbar.js
+│   ├── Shop.js
+│   ├── Cart.js
+│   ├── Card.js
+│   ├── ModalWindow.js
+│   └── ProductData.js
+│
+└── img/
+    ├── Helmet images
+    ├── Jacket images
+    ├── Glove images
+    ├── Homepage images
+    └── Logo images
+```
+
+---
+
+# 📄 File Description
+
+## App.js
+
+Main application component responsible for:
+
+- React Router configuration
+- Page navigation
+- Shopping cart state management
+
+---
+
+## Navbar.js
+
+Navigation component containing:
+
+- MotoMax logo
+- Home link
+- Shop link
+- Cart link
+
+---
+
+## Home.js
+
+Landing page containing:
+
+- Hero banner
+- Welcome message
+- Featured products
+
+---
+
+## Shop.js
+
+Displays the motorcycle product catalog.
+
+Includes:
+
+- Product categories
+- Product cards
+- Category filtering
+- Add to Cart functionality
+- Product modal window
+
+---
+
+## Card.js
+
+Reusable product card component.
+
+Uses React props to display:
+
+- Product image
+- Product name
+- Price
+- Product details
+
+---
+
+## ModalWindow.js
+
+Reusable modal component displaying:
+
+- Product image
+- Product description
+- Product price
+- Add to Cart button
+
+---
+
+## Cart.js
+
+Shopping cart page displaying:
+
+- Selected products
+- Product quantity
+- Remove buttons
+- Subtotal
+- NY sales tax (8.16%)
+- Total price
+
+---
+
+## ProductData.js
+
+Stores all product information:
+
+- Product name
+- Price
+- Category
+- Description
+- Image
+
+---
+
+## App.css
+
+Main stylesheet responsible for:
+
+- Website layout
+- Navigation styling
+- Product cards
+- Modal styling
+- Shopping cart design
+- Footer
+- Responsive design
+
+---
+
+# 🛠️ Technologies Used
+
+- React.js
+- React Router DOM
+- JavaScript (ES6)
+- HTML5
+- CSS3
+- React Hooks (`useState`)
+- React Props
+- Event Handling
+- CSS Flexbox
+- CSS Grid
+
+---
+
+# ▶️ How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+### 2. Navigate into the project folder
+
+```bash
+cd ET712_Project_MotoMax
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Install React Router DOM
+
+```bash
+npm install react-router-dom
+```
+
+### 5. Start the development server
+
+```bash
+npm start
+```
+
+The application will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# ✅ Project Requirements Completed
+
+✔ React Router navigation  
+✔ Multiple routes  
+✔ Reusable React components  
+✔ React Props  
+✔ React State Management  
+✔ Event Handling  
+✔ Shopping cart functionality  
+✔ Dynamic price calculations  
+✔ New York Sales Tax calculation (8.16%)  
+✔ Modal window component  
+✔ Responsive web design  
+✔ Motorcycle-themed user interface  
+
+---
+
+# 👨‍💻 Author
+
+**Nihar Patel**
+
+Course: **ET712 – Full Stack Web Development**  
+Project: **MotoMax React E-Commerce Application**
