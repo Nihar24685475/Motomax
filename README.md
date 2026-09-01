@@ -1,4 +1,3 @@
-#PROJECT 2
 
 # MotoMax 🏍️
 
